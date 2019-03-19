@@ -423,7 +423,6 @@
             this.Name = "Client";
             this.Text = "Musics - Client";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Client_FormClosing);
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Client_FormClosed);
             this.Load += new System.EventHandler(this.Client_Load);
             this.UIAdministration.ResumeLayout(false);
             this.UIAdministration.PerformLayout();

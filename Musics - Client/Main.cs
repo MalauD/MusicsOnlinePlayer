@@ -154,14 +154,6 @@ namespace Musics___Client
 
         private void Client_Load(object sender, EventArgs e)
         {
-            //ServerManagerService.Instance.recevoir.Abort();
-            //ServerManagerService.Instance.recevoir = new Thread(new ThreadStart(ServerManagerService.Instance.Receive));
-            //ServerManagerService.Instance.recevoir.Start();
-
-            //EditAccountDetails(ServerManagerService.Instance.Me);
-
-            //ServerManagerService.Instance.SendObject(new RequestFavorites(ServerManagerService.Instance.Me.UID));
-
             InitServices();
 
             homeControl1.SearchEvent += HomeControl1_SearchEvent;
@@ -206,12 +198,6 @@ namespace Musics___Client
         }
 
         #region Network
-
-        private void Client_FormClosed(object sender, FormClosedEventArgs e)
-        {
-           // ServerManagerService.Instance.SendObject(new Disconnect());
-            //ServerManagerService.Instance.CloseSocket();
-        }
 
         public event EventHandler LoginInfoReceived;
 
